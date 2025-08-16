@@ -152,7 +152,7 @@
 
 .features {
   padding: 100px 0;
-  background: #fbf5e4;
+  background: #f3f9f1;
 }
 
 .section-title {
@@ -175,15 +175,10 @@
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(167, 206, 238, 0.1);
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 80px rgba(167, 206, 238, 0.2);
-}
 
 .feature-icon {
   width: 80px;
@@ -327,7 +322,7 @@
 }
 
 .testimonial-card {
-  background: #fbf5e4;
+  background: #f9f7f1;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(167, 206, 238, 0.1);
@@ -402,7 +397,7 @@
 
 .community {
   padding: 100px 0;
-  background: #fbf5e4;
+  background: #fcf9f0;
 }
 
 .community-tabs {

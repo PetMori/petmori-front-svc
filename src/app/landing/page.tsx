@@ -9,14 +9,12 @@ import { FaDog } from "react-icons/fa6";
 import CuttingDog from "../../../public/cuttingDog.jpg";
 import Sudog from "../../../public/sudog.jpg";
 import WhiteDog from "../../../public/whitedog.jpg";
-import AngleDog from "../../../public/angle.jpg";
 import PartyDog from "../../../public/partyDog.jpg";
 import DogBack from "../../../public/dogBack.jpg";
 import DogDay from "../../../public/dogDay.jpg";
 import {
   Scissors,
   Dog,
-  Heart,
   Lightbulb,
   Star,
   HelpCircle,
@@ -24,6 +22,7 @@ import {
   Droplets,
   Users,
   PawPrint,
+  ContactIcon,
 } from "lucide-react";
 
 const Landing = () => {
@@ -179,6 +178,7 @@ const Landing = () => {
                 src={CuttingDog}
                 alt="봄철 반려동물 털 관리법"
                 className="magazine-image"
+                priority
               />
               <div className="magazine-overlay">
                 <h3>봄철 반려동물 털 관리법</h3>
@@ -190,6 +190,7 @@ const Landing = () => {
                 src={WhiteDog}
                 alt="견종별 미용 스타일 가이드"
                 className="magazine-image"
+                priority
               />
               <div className="magazine-overlay">
                 <h3>견종별 미용 스타일 가이드</h3>
@@ -201,6 +202,7 @@ const Landing = () => {
                 src={Sudog}
                 alt="미용과 건강관리"
                 className="magazine-image"
+                priority
               />
               <div className="magazine-overlay">
                 <h3>미용과 건강관리의 연관성</h3>
@@ -218,6 +220,7 @@ const Landing = () => {
                 src={PartyDog}
                 alt="2025 서울 펫 페스티벌"
                 className="event-image"
+                priority
               />
               <div className="event-info">
                 <div className="event-date">
@@ -235,6 +238,7 @@ const Landing = () => {
                 src={DogBack}
                 alt="여름 미용 컨테스트"
                 className="event-image"
+                priority
               />
               <div className="event-info">
                 <div className="event-date">
@@ -248,7 +252,12 @@ const Landing = () => {
               </div>
             </div>
             <div className="event-card">
-              <Image src={DogDay} alt="가을 펫 파티" className="event-image" />
+              <Image
+                src={DogDay}
+                alt="가을 펫 파티"
+                className="event-image"
+                priority
+              />
               <div className="event-info">
                 <div className="event-date">
                   <span className="event-month">OCT</span>
@@ -290,8 +299,11 @@ const Landing = () => {
                   <FaDog />
                   서비스 둘러보기
                 </a>
-                <a href="#testimonials" className="btn btn-secondary">
-                  📹 실시간 모니터링 후기
+                <a
+                  href="mailto:dldydtn84@gmail.com"
+                  className="btn btn-secondary"
+                >
+                  <ContactIcon /> 문의하기
                 </a>
               </div>
             </div>
@@ -311,6 +323,7 @@ const Landing = () => {
                       src={Thumbnail}
                       alt="Thumbnail Icon"
                       className="absolute bottom-0  flex w-full object-contain object-bottom rounded-b-[25px]"
+                      priority
                     />
                   </div>
                   {/* <div className="live-indicator">● LIVE</div>
@@ -357,7 +370,12 @@ const Landing = () => {
                       height: "20px",
                     }}
                   >
-                    <Image src={Bell} className="w-full h-full" alt="bell" />
+                    <Image
+                      src={Bell}
+                      className="w-full h-full"
+                      alt="bell"
+                      priority
+                    />
                   </div>
                   <div
                     style={{
@@ -378,6 +396,7 @@ const Landing = () => {
                         objectFit: "cover",
                         objectPosition: "top",
                       }}
+                      priority
                     />
                   </div>
                 </div>
@@ -426,7 +445,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section className="community">
+      <section id="community" className="community">
         <div className="container">
           <h2 className="section-title">함께 만드는 반려동물 커뮤니티</h2>
           <div className="community-tabs">
