@@ -7,6 +7,7 @@
 .hero {
   background: linear-gradient(135deg, #fbf5e4 0%, #fff 50%, #fbf5e4 100%);
   min-height: 100vh;
+  padding: 50px;
   display: flex;
   align-items: center;
   position: relative;
@@ -18,6 +19,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  justify-items: center;
   z-index: 2;
   position: relative;
 }
@@ -213,8 +215,12 @@
 .monitoring-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 60px;
   align-items: center;
+  place-items: center;
+}
+.monitoring-text{
+  padding-right: 60px;
 }
 
 .monitoring-text h2 {
@@ -663,7 +669,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(167, 206, 238, 0.1);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .event-card:hover {

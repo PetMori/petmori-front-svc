@@ -281,7 +281,10 @@ const Landing = () => {
     <>
       <section className="hero">
         <div className="container">
-          <div className="hero-content">
+          <div
+            className="hero-content"
+            style={{ paddingLeft: isMobile ? "0px" : "50px" }}
+          >
             <div className="hero-text">
               <h1>
                 우리 아이의 미용,
@@ -307,7 +310,7 @@ const Landing = () => {
                 </a>
               </div>
             </div>
-            <div className="hero-visual ">
+            <div className="hero-visual">
               <div className="phone-mockup">
                 <div className="phone-screen">
                   <div
@@ -339,7 +342,12 @@ const Landing = () => {
 
       <section id="monitoring" className="live-monitoring">
         <div className="container">
-          <div className="monitoring-content ">
+          <div
+            className="monitoring-content "
+            style={{
+              paddingLeft: isMobile ? "0px" : "50px",
+            }}
+          >
             <div className="monitoring-text">
               <h2>
                 <span className="highlight-text">실시간 모니터링</span>
@@ -356,10 +364,7 @@ const Landing = () => {
                 <li>완료 알림으로 픽업 타이밍까지</li>
               </ul>
             </div>
-            <div
-              className="flex w-full h-full justify-center"
-              style={{ paddingRight: isMobile ? "0px" : "10px" }}
-            >
+            <div className="flex w-full h-full justify-center">
               <div className="phone-mockup">
                 <div className="phone-screen" style={{ position: "relative" }}>
                   <div
